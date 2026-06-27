@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – TwentyOne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0f0f13;
+      --surface:  #1a1a24;
+      --accent:   #7c6bff;
+      --accent2:  #a78bfa;
+      --text:     #e8e8f0;
+      --muted:    #8888a8;
+      --border:   #2a2a3a;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem;
+      color: var(--accent2);
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+    .logo span { color: var(--muted); font-weight: 400; }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin-left: 1.5rem;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--text); }
+
+    .content {
+      max-width: 680px;
+      margin: 4rem auto 5rem;
+      padding: 0 2rem;
+    }
+
+    .page-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      letter-spacing: -0.75px;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .updated {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 2.5rem 0 0.6rem;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    li { margin-bottom: 0.4rem; }
+
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    footer p { font-size: 0.8rem; color: var(--muted); }
+
+    footer a {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.25rem;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--accent2); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">Twenty<span>One</span></a>
+    <nav>
+      <a href="https://github.com/ERciabbatta/TwentyOne" target="_blank">GitHub</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <div class="page-label">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 2026</p>
+
+    <p>TwentyOne ("the app", "we", "us") is a mobile application for building 21-day habits. This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>When you sign in with Google, we receive the following from your Google account:</p>
+    <ul>
+      <li>Your name and email address</li>
+      <li>Your Google profile photo (if available)</li>
+    </ul>
+    <p>During normal app use, we store in your personal Firestore database:</p>
+    <ul>
+      <li>Daily check-in data (mood, routine completion)</li>
+      <li>Notification preferences (chosen reminder time)</li>
+      <li>Avatar and display name customisation</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>All collected data is used exclusively to provide and personalise the app experience:</p>
+    <ul>
+      <li>Identifying your account and syncing your data across devices</li>
+      <li>Displaying your habit progress and history</li>
+      <li>Sending local notifications at your chosen time</li>
+    </ul>
+    <p>We do not use your data for advertising or share it with third parties.</p>
+
+    <h2>3. Data Storage</h2>
+    <p>Your data is stored in Google Firebase (Firestore), operated by Google LLC. Data is tied to your account and is only accessible by you. Firebase infrastructure is GDPR-compliant.</p>
+
+    <h2>4. Google Sign-In</h2>
+    <p>TwentyOne uses Google Sign-In via Firebase Authentication. By signing in with Google, you agree to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. We only request the minimum OAuth scopes needed: your email and basic profile.</p>
+
+    <h2>5. Local Notifications</h2>
+    <p>The app schedules daily reminders locally on your device. No notification content is transmitted to our servers or any third party.</p>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <p>Your data is retained as long as your account is active. To delete your account and all associated data, contact us at the email below. We will process deletion within 30 days.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>TwentyOne is not directed at children under 13. We do not knowingly collect personal data from children.</p>
+
+    <h2>8. Your Rights (GDPR)</h2>
+    <p>If you are in the European Economic Area, you have the right to access, correct, or delete your personal data. You may also withdraw consent at any time by deleting your account.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy occasionally. When we do, we will update the "Last updated" date at the top of this page.</p>
+
+    <hr class="divider" />
+
+    <h2>Contact</h2>
+    <p>For any privacy-related questions or data deletion requests, reach us via <a href="https://github.com/ERciabbatta/TwentyOne/issues" target="_blank">GitHub Issues</a>.</p>
+  </main>
+
+  <footer>
+    <p>© 2026 TwentyOne. All rights reserved.</p>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="https://github.com/ERciabbatta/TwentyOne" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
