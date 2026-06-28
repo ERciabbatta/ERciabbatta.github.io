@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – TwentyOne</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:       #0f0f13;
-      --surface:  #1a1a24;
-      --accent:   #7c6bff;
-      --accent2:  #a78bfa;
-      --text:     #e8e8f0;
-      --muted:    #8888a8;
-      --border:   #2a2a3a;
+      --bg:        #121821;
+      --surface:   #1a2233;
+      --accent:    #8FB2DE;
+      --accent-dim: rgba(143, 178, 222, 0.12);
+      --accent-border: rgba(143, 178, 222, 0.25);
+      --text:      #e8edf5;
+      --muted:     #7a8fa8;
+      --border:    #243044;
     }
 
     body {
@@ -28,8 +29,9 @@
       min-height: 100vh;
     }
 
+    /* ── Header ─────────────────────────────────────── */
     header {
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 2.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -37,42 +39,50 @@
     }
 
     .logo {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.25rem;
-      color: var(--accent2);
-      letter-spacing: -0.5px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.3px;
       text-decoration: none;
     }
-    .logo span { color: var(--muted); font-weight: 400; }
+
+    .logo-number {
+      color: var(--text);
+      font-style: italic;
+      font-weight: 400;
+    }
 
     nav a {
       color: var(--muted);
       text-decoration: none;
       font-size: 0.875rem;
-      margin-left: 1.5rem;
+      margin-left: 1.75rem;
       transition: color 0.2s;
     }
-    nav a:hover { color: var(--text); }
+    nav a:hover { color: var(--accent); }
 
+    /* ── Content ─────────────────────────────────────── */
     .content {
       max-width: 680px;
-      margin: 4rem auto 5rem;
+      margin: 4.5rem auto 6rem;
       padding: 0 2rem;
     }
 
     .page-label {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 600;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--accent2);
-      margin-bottom: 0.75rem;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
     }
 
     h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 2rem;
-      letter-spacing: -0.75px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
       margin-bottom: 0.5rem;
       color: var(--text);
     }
@@ -83,12 +93,16 @@
       margin-bottom: 3rem;
     }
 
+    /* ── Section headings ────────────────────────────── */
     h2 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
       font-weight: 700;
+      font-style: italic;
       color: var(--text);
-      margin: 2.5rem 0 0.6rem;
+      margin: 2.75rem 0 0.65rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
     }
 
     p, li {
@@ -101,20 +115,44 @@
       padding-left: 1.25rem;
     }
 
-    li { margin-bottom: 0.4rem; }
-
-    a { color: var(--accent2); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 2.5rem 0;
+    li {
+      margin-bottom: 0.4rem;
+      position: relative;
     }
 
+    li::marker {
+      color: var(--accent);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Contact box ─────────────────────────────────── */
+    .contact-box {
+      margin-top: 3rem;
+      background: var(--surface);
+      border: 1px solid var(--accent-border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+    }
+
+    .contact-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      font-style: normal;
+      color: var(--text);
+      margin: 0 0 0.5rem;
+      padding: 0;
+      border: none;
+    }
+
+    .contact-box p { margin-bottom: 0; }
+
+    /* ── Footer ──────────────────────────────────────── */
     footer {
       border-top: 1px solid var(--border);
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 2.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -128,16 +166,16 @@
       font-size: 0.8rem;
       color: var(--muted);
       text-decoration: none;
-      margin-left: 1.25rem;
+      margin-left: 1.5rem;
       transition: color 0.2s;
     }
-    footer a:hover { color: var(--accent2); }
+    footer a:hover { color: var(--accent); }
   </style>
 </head>
 <body>
 
   <header>
-    <a class="logo" href="index.html">Twenty<span>One</span></a>
+    <a class="logo" href="index.html">Twenty<span class="logo-number">One</span></a>
     <nav>
       <a href="https://github.com/ERciabbatta/TwentyOne" target="_blank">GitHub</a>
       <a href="index.html">Home</a>
@@ -194,10 +232,10 @@
     <h2>9. Changes to This Policy</h2>
     <p>We may update this policy occasionally. When we do, we will update the "Last updated" date at the top of this page.</p>
 
-    <hr class="divider" />
-
-    <h2>Contact</h2>
-    <p>For any privacy-related questions or data deletion requests, reach us via <a href="https://github.com/ERciabbatta/TwentyOne/issues" target="_blank">GitHub Issues</a>.</p>
+    <div class="contact-box">
+      <h2>Contact</h2>
+      <p>For any privacy-related questions or data deletion requests, reach us via <a href="https://github.com/ERciabbatta/TwentyOne/issues" target="_blank">GitHub Issues</a>.</p>
+    </div>
   </main>
 
   <footer>
